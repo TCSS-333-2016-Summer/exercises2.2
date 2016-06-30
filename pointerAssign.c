@@ -2,12 +2,12 @@
 #include <stdlib.h>
 int main(){
  
- int a[]={1,2,3,4,5};
+ float a[]={1.0f,2.0f,3.0f,4.0f,5.0f};
  int *b= (int*)&a;
  float *c=(float*)&a;
 
  for (int i=0;i<5;i++){ 
-  printf ("a[i]=%d b[i]=%d c[i]=%d\n",a[i],b[i],c[i]);
+  printf ("a[i]=%f b[i]=%d c[i]=%f\n",a[i],b[i],c[i]);
 	}
 	 
  return 0;

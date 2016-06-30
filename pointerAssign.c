@@ -7,7 +7,7 @@ int main(){
  float *c=(float*)&a;
 
  for (int i=0;i<5;i++){ 
-  printf ("a[i]=%d b[i]=%d c[i]=%d\n",a[i],b[i],c[i]);
+  printf ("a[i]=%d b[i]=%d c[i]=%f\n",a[i],b[i],c[i]);
 	}
 	 
  return 0;

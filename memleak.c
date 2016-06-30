@@ -4,10 +4,10 @@ void local();
 void dynamic(int i);
 
 void dynamic (int i){
- int *a;
- for (int j=0;j<1000000;j++){
+	int *a;
+	for (int j=0;j<1000000;j++){
   a=malloc(10000*sizeof(int));
- }
+	}
  a[9999]=i;
  printf ("%d\n",a[9999]);	
 }

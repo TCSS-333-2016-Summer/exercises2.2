@@ -1,25 +1,25 @@
-CC=gcc -std=c99 -ggdb
+CC=gcc -std=C99
 LD=gcc 
 
 all: pointerAssign xsquare literal flowers fibonacci pointerAssign memleak
 
 memleak: memleak.c
-	$(CC) -o memleak memleak.c
+	gcc -o memleak memleak.c
 	
 fibonacci: fibonacci.c
-	$(CC) -o fibonacci fibonacci.c
+	gcc -o fibonacci fibonacci.c
 
 xsquare: xsquare.c
-	$(CC) -o xsquare xsquare.c	
+	gcc -o xsquare xsquare.c	
 
 pointerAssign: pointerAssign.c
-	$(CC) -o pointerAssign pointerAssign.c
+	gcc -o pointerAssign pointerAssign.c
 		
 literal: literal.c
-	$(CC) -o literal literal.c
+	gcc -o literal literal.c
 
 flowers: flowers.c
-	$(CC) -o flowers flowers.c
+	gcc -o flowers flowers.c
 
 clean:
 	rm xsquare literal flowers fibonacci pointerAssign memleak
